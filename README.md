@@ -1,7 +1,7 @@
 Description
 ------
 The default Arduino keyboard library calls sendReport every time a switch is pressed or released. 
-That's very inefficient, so you can speed up the latency by only calling sendreport once at the end after a key scan.
+That's very inefficient, so you can speed up the latency by only calling sendReport once at the end after a key scan.
 
 How to Use
 ------
