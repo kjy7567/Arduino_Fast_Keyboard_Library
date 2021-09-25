@@ -1,6 +1,28 @@
 How to Use
 ------
+    #include <Keyboard.h>
+    KeyReport _keyReport;
 
+    void setup() {
+
+      pinMode(2, OUTPUT);
+      pinMode(3, OUTPUT);
+      pinMode(4, OUTPUT);
+      pinMode(5, OUTPUT);
+
+      pinMode(8, INPUT_PULLUP);
+      pinMode(9, INPUT_PULLUP);
+      pinMode(10, INPUT_PULLUP);
+      pinMode(16, INPUT_PULLUP);
+      pinMode(14, INPUT_PULLUP);
+      pinMode(15, INPUT_PULLUP);
+
+      digitalWrite(2, LOW);
+      digitalWrite(3, LOW);
+      digitalWrite(4, LOW);
+      digitalWrite(5, LOW);
+
+    }
     void loop() {
       if(!digitalRead(8)){
         _keyReport = _keyReport = Keyboard.press_key(_keyReport, KEY_F10);
