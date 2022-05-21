@@ -53,6 +53,8 @@ How to Use
       else if(digitalRead(16)){
         _keyReport = Keyboard.release_key(_keyReport, '\'');
       }
-    ......
-    Keyboard.sendReport(&_keyReport); //only call once at the loop's end
+      
+      ......
+      
+      Keyboard.sendReport(&_keyReport); //only call once at the loop's end
     }
